@@ -1,0 +1,16 @@
+# Version ranges, not exact pins: the development sandbox had no network, so this exact set was NOT resolved/installed there.
+# Run `pip freeze > requirements.lock` after your first successful install to pin what actually works.
+torch>=2.2,<3
+transformers>=4.40,<5
+sentence-transformers>=3.0,<6
+faiss-cpu>=1.8,<2
+pymupdf>=1.24,<2
+gradio>=5.0,<6
+spacy>=3.7,<4
+nltk>=3.8
+scikit-learn>=1.4
+numpy>=1.26,<3
+pandas>=2.1
+joblib>=1.3
+python-dotenv>=1.0
+google-genai>=1.0
