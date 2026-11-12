@@ -1,0 +1,11 @@
+services:
+  researchmind:
+    build: .
+    ports: ["7860:7860"]
+    env_file: [.env]
+    environment:
+      DATA_DIR: /data
+    volumes:
+      - researchmind-data:/data   # persists PDFs, index, caches across restarts
+volumes:
+  researchmind-data:
