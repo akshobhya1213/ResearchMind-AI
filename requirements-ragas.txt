@@ -1,0 +1,5 @@
+# Optional: RAGAS integration (evaluation/ragas_eval.py). Unverified in the development sandbox.
+-r requirements.txt
+ragas>=0.2
+datasets>=2.18
+langchain-google-genai>=2.0
