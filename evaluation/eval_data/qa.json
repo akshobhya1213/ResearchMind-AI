@@ -1,0 +1,20 @@
+{
+ "name": "synthetic-fixture-qa-v1",
+ "note": "Questions were written by the project author against the synthetic corpus; relevance is defined by exact key phrases.",
+ "items": [
+  {"question":"What kernel shape does HexaNet use instead of square kernels?","reference_answer":"Hexagonal convolution kernels with six equidistant neighbours.","answerable":true,"relevant":[{"doc":"synthetic_hexanet.pdf","phrase":"hexagonal convolution kernels with six equidistant neighbours"}]},
+  {"question":"What accuracy did HexaNet reach on EuroSAT compared with ResNet-18?","reference_answer":"96.4% versus 94.1% for ResNet-18.","answerable":true,"relevant":[{"doc":"synthetic_hexanet.pdf","phrase":"reaches an accuracy of 96.4%, compared with 94.1% for ResNet-18"}]},
+  {"question":"What are the limitations of HexaNet?","reference_answer":"It needs a resampling step that raises preprocessing time, was tested only on optical imagery, and used a single random seed.","answerable":true,"relevant":[{"doc":"synthetic_hexanet.pdf","phrase":"requires a resampling step that increases preprocessing time"},{"doc":"synthetic_hexanet.pdf","phrase":"tested only on optical imagery"},{"doc":"synthetic_hexanet.pdf","phrase":"single random seed"}]},
+  {"question":"How many parameters does HexaNet have?","reference_answer":"3.2 million parameters, 70% fewer than ResNet-18.","answerable":true,"relevant":[{"doc":"synthetic_hexanet.pdf","phrase":"The model has 3.2 million parameters"}]},
+  {"question":"How does DepthRAG decide how many passages to retrieve?","reference_answer":"A small BERT-based classifier predicts question complexity and sets the depth between 2 and 12 passages.","answerable":true,"relevant":[{"doc":"synthetic_depthrag.pdf","phrase":"small classifier built on a BERT encoder to predict question complexity"}]},
+  {"question":"Which datasets does DepthRAG use for evaluation?","reference_answer":"Natural Questions and HotpotQA.","answerable":true,"relevant":[{"doc":"synthetic_depthrag.pdf","phrase":"Experiments use Natural Questions and HotpotQA"}]},
+  {"question":"How many fewer prompt tokens does DepthRAG use on Natural Questions?","reference_answer":"35% fewer prompt tokens.","answerable":true,"relevant":[{"doc":"synthetic_depthrag.pdf","phrase":"35% fewer prompt tokens"}]},
+  {"question":"What limitations does DepthRAG have?","reference_answer":"The classifier was trained only on English questions and HotpotQA gains were within one standard deviation.","answerable":true,"relevant":[{"doc":"synthetic_depthrag.pdf","phrase":"trained only on English questions"},{"doc":"synthetic_depthrag.pdf","phrase":"within one standard deviation"}]},
+  {"question":"What graph does PhishGraph build?","reference_answer":"Nodes are domains; edges are hyperlinks and shared hosting records.","answerable":true,"relevant":[{"doc":"synthetic_phishgraph.pdf","phrase":"nodes are domains and whose edges are hyperlinks and shared hosting records"}]},
+  {"question":"What F1-score does PhishGraph achieve compared with the random forest baseline?","reference_answer":"0.953 versus 0.902.","answerable":true,"relevant":[{"doc":"synthetic_phishgraph.pdf","phrase":"F1-score of 0.953"},{"doc":"synthetic_phishgraph.pdf","phrase":"F1-score of 0.902"}]},
+  {"question":"Why might the PhishGraph labels be unreliable?","reference_answer":"Labels come from blocklists, which lag behind new attacks and may contain errors.","answerable":true,"relevant":[{"doc":"synthetic_phishgraph.pdf","phrase":"Labels come from blocklists, which lag behind new attacks"}]},
+  {"question":"How many domains are in the PhishGraph dataset?","reference_answer":"A crawl of 120000 domains.","answerable":true,"relevant":[{"doc":"synthetic_phishgraph.pdf","phrase":"crawl of 120000 domains"}]},
+  {"question":"What is the capital of France?","reference_answer":"","answerable":false,"relevant":[]},
+  {"question":"Which quantum error correction code did the authors use?","reference_answer":"","answerable":false,"relevant":[]}
+ ]
+}
