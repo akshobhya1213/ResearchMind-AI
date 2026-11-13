@@ -1,0 +1,18 @@
+{
+ "timestamp": "2026-11-12 07:12:42",
+ "dataset": "synthetic-fixture-qa-v1",
+ "n_questions": 12,
+ "n_chunks": 14,
+ "chunk_size_words": 60,
+ "chunk_overlap_words": 15,
+ "embedder": "hashing-lexical-baseline",
+ "embedder_is_transformer": false,
+ "reranker": "lexical-coverage-fallback",
+ "reranker_is_transformer": false,
+ "rows": [
+  {"Configuration":"Vector only","P@1":0.6667,"P@3":0.3333,"P@5":0.2167,"R@1":0.6111,"R@3":0.8611,"R@5":0.9444,"MRR":0.7847,"Context precision":0.7708},
+  {"Configuration":"Hybrid (vector + BM25, RRF)","P@1":0.6667,"P@3":0.3333,"P@5":0.2167,"R@1":0.6111,"R@3":0.8611,"R@5":0.9444,"MRR":0.7806,"Context precision":0.7667},
+  {"Configuration":"Hybrid + rerank [lexical-coverage-fallback]","P@1":0.6667,"P@3":0.3333,"P@5":0.2167,"R@1":0.6111,"R@3":0.8611,"R@5":0.9444,"MRR":0.7806,"Context precision":0.7667}
+ ],
+ "caveat": "Tiny synthetic corpus: use for relative comparison / regression checks, not as a benchmark."
+}
